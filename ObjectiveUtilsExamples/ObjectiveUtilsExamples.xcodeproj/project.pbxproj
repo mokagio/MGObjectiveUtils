@@ -23,6 +23,7 @@
 		3F571F391729283B00FBF2AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F571F141729283B00FBF2AC /* Foundation.framework */; };
 		3F571F411729283B00FBF2AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F571F3F1729283B00FBF2AC /* InfoPlist.strings */; };
 		3F571F441729283B00FBF2AC /* ObjectiveUtilsExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F571F431729283B00FBF2AC /* ObjectiveUtilsExamplesTests.m */; };
+		3F571F51172928A600FBF2AC /* MGInsetLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F571F50172928A600FBF2AC /* MGInsetLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		3F571F401729283B00FBF2AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F571F421729283B00FBF2AC /* ObjectiveUtilsExamplesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveUtilsExamplesTests.h; sourceTree = "<group>"; };
 		3F571F431729283B00FBF2AC /* ObjectiveUtilsExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveUtilsExamplesTests.m; sourceTree = "<group>"; };
+		3F571F4F172928A600FBF2AC /* MGInsetLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGInsetLabel.h; sourceTree = "<group>"; };
+		3F571F50172928A600FBF2AC /* MGInsetLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGInsetLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		3F571F061729283B00FBF2AC = {
 			isa = PBXGroup;
 			children = (
+				3F571F4D172928A600FBF2AC /* ObjectiveUtils */,
 				3F571F181729283B00FBF2AC /* ObjectiveUtilsExamples */,
 				3F571F3C1729283B00FBF2AC /* ObjectiveUtilsExamplesTests */,
 				3F571F111729283B00FBF2AC /* Frameworks */,
@@ -158,6 +162,24 @@
 				3F571F3F1729283B00FBF2AC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F571F4D172928A600FBF2AC /* ObjectiveUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3F571F4E172928A600FBF2AC /* Classes */,
+			);
+			name = ObjectiveUtils;
+			path = ../ObjectiveUtils;
+			sourceTree = "<group>";
+		};
+		3F571F4E172928A600FBF2AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3F571F4F172928A600FBF2AC /* MGInsetLabel.h */,
+				3F571F50172928A600FBF2AC /* MGInsetLabel.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +296,7 @@
 				3F571F1F1729283B00FBF2AC /* main.m in Sources */,
 				3F571F231729283B00FBF2AC /* MGAppDelegate.m in Sources */,
 				3F571F2C1729283B00FBF2AC /* MGViewController.m in Sources */,
+				3F571F51172928A600FBF2AC /* MGInsetLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
