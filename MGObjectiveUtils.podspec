@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod spec lint ObjectiveUtils.podspec' to ensure this is a
+# Be sure to run `pod spec lint MGObjectiveUtils.podspec' to ensure this is a
 # valid spec and remove all comments before submitting the spec.
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A set of useful classes and categories. Intended to be a Pod, but needs a lot of polishing first."
   # s.description  = <<-DESC
-  #                   An optional longer description of ObjectiveUtils
+  #                   An optional longer description of MGObjectiveUtils
   #
   #                   * Markdown format.
   #                   * Don't worry about the indent, we strip it!
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
   # 'LICENCE*.*' or 'LICENSE*.*', however if the name is different, specify it.
-  s.license      = { :type => 'MIT' }
+  s.license      = 'MIT'
+  # s.license      = { :type => 'MIT (example)', :file => 'FILE_LICENSE' }
 
   # Specify the authors of the library, with email addresses. You can often find
   # the email addresses of the authors by using the SCM log. E.g. $ git log
