@@ -5,7 +5,7 @@
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
 Pod::Spec.new do |s|
-  s.name         = "ObjectiveUtils"
+  s.name         = "MGObjectiveUtils"
   s.version      = "0.0.1"
   s.summary      = "A set of useful classes and categories. Intended to be a Pod, but needs a lot of polishing first."
   # s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   #                   * Markdown format.
   #                   * Don't worry about the indent, we strip it!
   #                  DESC
-  s.homepage     = "https://github.com/mokagio/ObjectiveUtils"
+  s.homepage     = "https://github.com/mokagio/MGObjectiveUtils"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "https://github.com/mokagio/ObjectiveUtils.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/mokagio/MGObjectiveUtils.git", :tag => "0.0.1" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   # added to the Pods project. If the pattern is a directory then the
   # path will automatically have '*.{h,m,mm,c,cpp}' appended.
   #
-  s.source_files = 'ObjectiveUtils/Classes/*.{h,m}', 'ObjectiveUtils/Classes/**/*.{h,m}'
+  s.source_files = 'MGObjectiveUtils/Classes/*.{h,m}', 'MGObjectiveUtils/Classes/**/*.{h,m}'
   # s.exclude_files = 'Classes/Exclude'
 
   # A list of file patterns which select the header files that should be
