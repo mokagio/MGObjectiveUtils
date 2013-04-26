@@ -8,7 +8,7 @@
 //  See https://gist.github.com/marcoarment/2596057
 //
 
-#import <ObjectiveUtils/MGInsetLabel.h>
+#import "MGInsetLabel.h"
 
 @interface MGResizableLabel : MGInsetLabel
 
