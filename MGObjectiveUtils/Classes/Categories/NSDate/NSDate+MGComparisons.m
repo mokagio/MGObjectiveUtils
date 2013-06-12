@@ -1,13 +1,13 @@
 //
-//  NSDate+Comparisons.m
+//  NSDate+MGComparisons.m
 //
 //  Created by mokagio on 13/06/2013.
 //  Copyright (c) 2013 mokagio. All rights reserved.
 //
 
-#import "NSDate+Comparisons.h"
+#import "NSDate+MGComparisons.h"
 
-@implementation NSDate (Comparisons)
+@implementation NSDate (MGComparisons)
 
 - (BOOL)isSameCalendarDayAs:(NSDate *)date
 {
