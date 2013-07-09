@@ -27,6 +27,8 @@
 		3F99EE5E178C729F00B8703B /* MGResizableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE5B178C729F00B8703B /* MGResizableLabel.m */; };
 		3F99EE61178C73DF00B8703B /* NSString+MGLettersManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE60178C73DF00B8703B /* NSString+MGLettersManipulation.m */; };
 		3F99EE63178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE62178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m */; };
+		3F99EE66178C7E1000B8703B /* UIView+MGSmartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE65178C7E1000B8703B /* UIView+MGSmartView.m */; };
+		D534AB7A26274552A423F99F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270A735CE0B14E5A8563EA3E /* libPods.a */; };
 		D95A7E04E4AE4E14B8FB44AA /* libPods-MGObjectiveUtilsPlaygroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB0BFFC072439FA84665AD /* libPods-MGObjectiveUtilsPlaygroundTests.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270A735CE0B14E5A8563EA3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99EE14178C711B00B8703B /* MGObjectiveUtilsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGObjectiveUtilsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99EE17178C711B00B8703B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F99EE19178C711B00B8703B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,7 +73,10 @@
 		3F99EE5F178C73DF00B8703B /* NSString+MGLettersManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MGLettersManipulation.h"; sourceTree = "<group>"; };
 		3F99EE60178C73DF00B8703B /* NSString+MGLettersManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MGLettersManipulation.m"; sourceTree = "<group>"; };
 		3F99EE62178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringPlusMGLettersManipulationSpec.m; sourceTree = "<group>"; };
+		3F99EE64178C7E1000B8703B /* UIView+MGSmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MGSmartView.h"; sourceTree = "<group>"; };
+		3F99EE65178C7E1000B8703B /* UIView+MGSmartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MGSmartView.m"; sourceTree = "<group>"; };
 		5ECB0BFFC072439FA84665AD /* libPods-MGObjectiveUtilsPlaygroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MGObjectiveUtilsPlaygroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EEAB2CDD213463590E2227D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		624B84D175F145F1B980D149 /* Pods-MGObjectiveUtilsPlaygroundTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGObjectiveUtilsPlaygroundTests.xcconfig"; path = "Pods/Pods-MGObjectiveUtilsPlaygroundTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 				3F99EE18178C711B00B8703B /* UIKit.framework in Frameworks */,
 				3F99EE1A178C711B00B8703B /* Foundation.framework in Frameworks */,
 				3F99EE1C178C711B00B8703B /* CoreGraphics.framework in Frameworks */,
+				D534AB7A26274552A423F99F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +115,7 @@
 				3F99EE16178C711B00B8703B /* Frameworks */,
 				3F99EE15178C711B00B8703B /* Products */,
 				624B84D175F145F1B980D149 /* Pods-MGObjectiveUtilsPlaygroundTests.xcconfig */,
+				5EEAB2CDD213463590E2227D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +136,7 @@
 				3F99EE1B178C711B00B8703B /* CoreGraphics.framework */,
 				3F99EE3B178C711B00B8703B /* SenTestingKit.framework */,
 				5ECB0BFFC072439FA84665AD /* libPods-MGObjectiveUtilsPlaygroundTests.a */,
+				270A735CE0B14E5A8563EA3E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +205,8 @@
 				3F99EE5B178C729F00B8703B /* MGResizableLabel.m */,
 				3F99EE5F178C73DF00B8703B /* NSString+MGLettersManipulation.h */,
 				3F99EE60178C73DF00B8703B /* NSString+MGLettersManipulation.m */,
+				3F99EE64178C7E1000B8703B /* UIView+MGSmartView.h */,
+				3F99EE65178C7E1000B8703B /* UIView+MGSmartView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -224,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F99EE4C178C711B00B8703B /* Build configuration list for PBXNativeTarget "MGObjectiveUtilsPlayground" */;
 			buildPhases = (
+				964DB37896BF40489F7C9916 /* Check Pods Manifest.lock */,
 				3F99EE10178C711B00B8703B /* Sources */,
 				3F99EE11178C711B00B8703B /* Frameworks */,
 				3F99EE12178C711B00B8703B /* Resources */,
+				A5C6EA7A8CE040D78BE0FFF3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,6 +364,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
+		964DB37896BF40489F7C9916 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		A5C6EA7A8CE040D78BE0FFF3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,6 +406,7 @@
 				3F99EE5D178C729F00B8703B /* MGInsetLabel.m in Sources */,
 				3F99EE5E178C729F00B8703B /* MGResizableLabel.m in Sources */,
 				3F99EE61178C73DF00B8703B /* NSString+MGLettersManipulation.m in Sources */,
+				3F99EE66178C7E1000B8703B /* UIView+MGSmartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +514,7 @@
 		};
 		3F99EE4D178C711B00B8703B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEAB2CDD213463590E2227D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGObjectiveUtilsPlayground/MGObjectiveUtilsPlayground-Prefix.pch";
@@ -484,6 +527,7 @@
 		};
 		3F99EE4E178C711B00B8703B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEAB2CDD213463590E2227D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGObjectiveUtilsPlayground/MGObjectiveUtilsPlayground-Prefix.pch";
