@@ -1,5 +1,9 @@
 platform :ios, "5.1"
 
+# MGObjectiveUtils Dependencies
+# Since the Pod is local we need to add them here
+pod 'FrameAccessor', '~> 1.2.0'
+
 target :MGObjectiveUtilsPlaygroundTests, :exclusive => true do
 	pod 'Kiwi', '~> 2.0.6'
 end

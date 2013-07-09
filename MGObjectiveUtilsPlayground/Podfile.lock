@@ -1,10 +1,13 @@
 PODS:
+  - FrameAccessor (1.2.0)
   - Kiwi (2.0.6)
 
 DEPENDENCIES:
+  - FrameAccessor (~> 1.2.0)
   - Kiwi (~> 2.0.6)
 
 SPEC CHECKSUMS:
+  FrameAccessor: 9cab222a118092deba0ae186d07fa51d4830d3e4
   Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
 
 COCOAPODS: 0.20.2

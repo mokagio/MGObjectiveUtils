@@ -83,6 +83,7 @@ Pod::Spec.new do |s|
   #
   # s.framework  = 'SomeFramework'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  s.frameworks = 'QuartzCore'
 
   # Specify a list of libraries that the application needs to link
   # against for this Pod to work.
@@ -101,5 +102,5 @@ Pod::Spec.new do |s|
 
   # Finally, specify any Pods that this Pod depends on.
   #
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.dependency 'FrameAccessor', '~> 1.2.0'
 end
