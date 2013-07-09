@@ -1,0 +1,5 @@
+platform :ios, "5.1"
+
+target :MGObjectiveUtilsPlaygroundTests, :exclusive => true do
+	pod 'Kiwi', '~> 2.0.6'
+end
