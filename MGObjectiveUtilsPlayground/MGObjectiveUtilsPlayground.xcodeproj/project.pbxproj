@@ -28,6 +28,7 @@
 		3F99EE61178C73DF00B8703B /* NSString+MGLettersManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE60178C73DF00B8703B /* NSString+MGLettersManipulation.m */; };
 		3F99EE63178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE62178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m */; };
 		3F99EE66178C7E1000B8703B /* UIView+MGSmartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EE65178C7E1000B8703B /* UIView+MGSmartView.m */; };
+		3FE8AD7E1794698D007B5673 /* NSDate+MGShorthands.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8AD7D1794698D007B5673 /* NSDate+MGShorthands.m */; };
 		D534AB7A26274552A423F99F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270A735CE0B14E5A8563EA3E /* libPods.a */; };
 		D95A7E04E4AE4E14B8FB44AA /* libPods-MGObjectiveUtilsPlaygroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB0BFFC072439FA84665AD /* libPods-MGObjectiveUtilsPlaygroundTests.a */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		3F99EE62178C74A700B8703B /* NSStringPlusMGLettersManipulationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringPlusMGLettersManipulationSpec.m; sourceTree = "<group>"; };
 		3F99EE64178C7E1000B8703B /* UIView+MGSmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MGSmartView.h"; sourceTree = "<group>"; };
 		3F99EE65178C7E1000B8703B /* UIView+MGSmartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MGSmartView.m"; sourceTree = "<group>"; };
+		3FE8AD7C1794698D007B5673 /* NSDate+MGShorthands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MGShorthands.h"; sourceTree = "<group>"; };
+		3FE8AD7D1794698D007B5673 /* NSDate+MGShorthands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MGShorthands.m"; sourceTree = "<group>"; };
 		5ECB0BFFC072439FA84665AD /* libPods-MGObjectiveUtilsPlaygroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MGObjectiveUtilsPlaygroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEAB2CDD213463590E2227D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		624B84D175F145F1B980D149 /* Pods-MGObjectiveUtilsPlaygroundTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGObjectiveUtilsPlaygroundTests.xcconfig"; path = "Pods/Pods-MGObjectiveUtilsPlaygroundTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -224,6 +227,8 @@
 			children = (
 				3F99EE56178C729F00B8703B /* NSDate+MGComparisons.h */,
 				3F99EE57178C729F00B8703B /* NSDate+MGComparisons.m */,
+				3FE8AD7C1794698D007B5673 /* NSDate+MGShorthands.h */,
+				3FE8AD7D1794698D007B5673 /* NSDate+MGShorthands.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				3F99EE5E178C729F00B8703B /* MGResizableLabel.m in Sources */,
 				3F99EE61178C73DF00B8703B /* NSString+MGLettersManipulation.m in Sources */,
 				3F99EE66178C7E1000B8703B /* UIView+MGSmartView.m in Sources */,
+				3FE8AD7E1794698D007B5673 /* NSDate+MGShorthands.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
