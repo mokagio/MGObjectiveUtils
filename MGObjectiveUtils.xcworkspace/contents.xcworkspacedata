@@ -53,4 +53,7 @@
          </FileRef>
       </Group>
    </Group>
+   <FileRef
+      location = "group:MGObjectiveUtilsTests/MGObjectiveUtilsTests.xcodeproj">
+   </FileRef>
 </Workspace>
