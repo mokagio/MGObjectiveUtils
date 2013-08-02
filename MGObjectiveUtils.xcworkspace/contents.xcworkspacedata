@@ -7,26 +7,6 @@
       <Group
          location = "group:Classes"
          name = "Classes">
-         <Group
-            location = "group:Categories"
-            name = "Categories">
-            <Group
-               location = "group:NSDate"
-               name = "NSDate">
-               <FileRef
-                  location = "group:NSDate+MGComparisons.h">
-               </FileRef>
-               <FileRef
-                  location = "group:NSDate+MGComparisons.m">
-               </FileRef>
-               <FileRef
-                  location = "group:NSDate+MGShorthands.h">
-               </FileRef>
-               <FileRef
-                  location = "group:NSDate+MGShorthands.m">
-               </FileRef>
-            </Group>
-         </Group>
          <FileRef
             location = "group:MGInsetLabel.h">
          </FileRef>
@@ -39,18 +19,36 @@
          <FileRef
             location = "group:MGResizableLabel.m">
          </FileRef>
-         <FileRef
-            location = "group:NSString+MGLettersManipulation.h">
-         </FileRef>
-         <FileRef
-            location = "group:NSString+MGLettersManipulation.m">
-         </FileRef>
-         <FileRef
-            location = "group:UIView+MGSmartView.h">
-         </FileRef>
-         <FileRef
-            location = "group:UIView+MGSmartView.m">
-         </FileRef>
+      </Group>
+      <Group
+         location = "group:Categories"
+         name = "Categories">
+         <Group
+            location = "group:NSDate"
+            name = "NSDate">
+            <FileRef
+               location = "group:NSDate+MGComparisons.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSDate+MGComparisons.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSDate+MGShorthands.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSDate+MGShorthands.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NSString"
+            name = "NSString">
+            <FileRef
+               location = "group:NSString+MGLettersManipulation.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSString+MGLettersManipulation.m">
+            </FileRef>
+         </Group>
       </Group>
    </Group>
    <FileRef
