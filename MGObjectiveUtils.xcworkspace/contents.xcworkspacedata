@@ -56,4 +56,7 @@
    <FileRef
       location = "group:Tests/MGObjectiveUtilsTests.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
