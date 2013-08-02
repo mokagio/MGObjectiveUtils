@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.0.6)
-  - MGObjectiveUtils (0.0.1)
+  - MGObjectiveUtils (0.0.2)
   - OCMock (2.1.1)
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
-  MGObjectiveUtils: 2dbb0750e80863e0c880f2b5289649507efcb991
+  MGObjectiveUtils: ab050d4e9491dd0fc92dece4967c23c31eeff0b5
   OCMock: 79212e5e328378af5cfd6edb5feacfd6c49cd8a3
 
 COCOAPODS: 0.22.3
