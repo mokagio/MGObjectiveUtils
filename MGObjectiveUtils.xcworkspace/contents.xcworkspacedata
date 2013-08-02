@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:MGObjectiveUtils"
+      name = "MGObjectiveUtils">
+      <Group
+         location = "group:Classes"
+         name = "Classes">
+         <Group
+            location = "group:Categories"
+            name = "Categories">
+            <Group
+               location = "group:NSDate"
+               name = "NSDate">
+               <FileRef
+                  location = "group:NSDate+MGComparisons.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSDate+MGComparisons.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSDate+MGShorthands.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSDate+MGShorthands.m">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:MGInsetLabel.h">
+         </FileRef>
+         <FileRef
+            location = "group:MGInsetLabel.m">
+         </FileRef>
+         <FileRef
+            location = "group:MGResizableLabel.h">
+         </FileRef>
+         <FileRef
+            location = "group:MGResizableLabel.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+MGLettersManipulation.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSString+MGLettersManipulation.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+MGSmartView.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+MGSmartView.m">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
