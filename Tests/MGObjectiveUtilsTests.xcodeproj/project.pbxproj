@@ -12,9 +12,11 @@
 		3F9A719117AC19C300F61CEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9A714117AC150400F61CEB /* Foundation.framework */; };
 		3F9A719717AC19C300F61CEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A719517AC19C300F61CEB /* InfoPlist.strings */; };
 		3F9A719A17AC19C300F61CEB /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A719917AC19C300F61CEB /* Tests.m */; };
+		42BD93C2F00D460381868B14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489906934A254BFCABA410C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CB08169FDD4CF583537036 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		3F9A713F17AC150400F61CEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F9A714117AC150400F61CEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F9A714317AC150400F61CEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -25,6 +27,7 @@
 		3F9A719817AC19C300F61CEB /* Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
 		3F9A719917AC19C300F61CEB /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		3F9A719B17AC19C300F61CEB /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		489906934A254BFCABA410C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 				3F9A718F17AC19C300F61CEB /* SenTestingKit.framework in Frameworks */,
 				3F9A719017AC19C300F61CEB /* UIKit.framework in Frameworks */,
 				3F9A719117AC19C300F61CEB /* Foundation.framework in Frameworks */,
+				42BD93C2F00D460381868B14 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +51,7 @@
 				3F9A719217AC19C300F61CEB /* Tests */,
 				3F9A713E17AC150400F61CEB /* Frameworks */,
 				3F9A713D17AC150400F61CEB /* Products */,
+				20CB08169FDD4CF583537036 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +70,7 @@
 				3F9A714117AC150400F61CEB /* Foundation.framework */,
 				3F9A714317AC150400F61CEB /* CoreGraphics.framework */,
 				3F9A716317AC150400F61CEB /* SenTestingKit.framework */,
+				489906934A254BFCABA410C8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,10 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F9A719E17AC19C300F61CEB /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
+				7EC0A447E4F044C1A0C05A14 /* Check Pods Manifest.lock */,
 				3F9A718917AC19C300F61CEB /* Sources */,
 				3F9A718A17AC19C300F61CEB /* Frameworks */,
 				3F9A718B17AC19C300F61CEB /* Resources */,
 				3F9A718C17AC19C300F61CEB /* ShellScript */,
+				534D16B5B6D142528A15C905 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +169,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		534D16B5B6D142528A15C905 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC0A447E4F044C1A0C05A14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -245,6 +283,7 @@
 		};
 		3F9A719C17AC19C300F61CEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CB08169FDD4CF583537036 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -253,6 +292,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -260,6 +307,7 @@
 		};
 		3F9A719D17AC19C300F61CEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CB08169FDD4CF583537036 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -268,6 +316,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -292,6 +348,7 @@
 				3F9A719D17AC19C300F61CEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
