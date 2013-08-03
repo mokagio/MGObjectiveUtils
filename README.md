@@ -1,6 +1,8 @@
 ObjectiveUtils
 ==============
 
+[![Build Status](https://travis-ci.org/mokagio/MGObjectiveUtils.png?branch=master)](https://travis-ci.org/mokagio/MGObjectiveUtils.png?branch=master)
+
 A set of classes and categories I find more or less useful. This may be a proper Pod one day, but needs **a lot** o polishing first.
 For the time being it can be used as a private Pod.
 
