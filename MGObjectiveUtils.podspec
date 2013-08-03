@@ -6,17 +6,12 @@
 #
 Pod::Spec.new do |s|
   s.name         = "MGObjectiveUtils"
-  s.version      = "0.0.1"
-  s.summary      = "Dummy dummy."
+  s.version      = "0.0.2"
+  s.summary      = "A set of useful classes and categories. Intended to be a Pod, but needs a lot of polishing first."
   s.homepage     = "http://EXAMPLE/MGObjectiveUtils"  
   s.license      = 'MIT'
   s.author       = { "Gio" => "mokagio42@gmail.com" }
-  # Development EDGE
-  s.source       = { :git => "https://github.com/mokagio/MGObjectiveUtils.git", :commit => "46c750a6679c0b836003378cb4363e776bd66b0b" }
-  # Master EDGE
-  # s.source       = { :git => "https://github.com/mokagio/MGObjectiveUtils.git", :commit => "a652eee4576119cb29eb7146e2a826e03d4cac9e" }
-  # Default. Doesn't work because all the FS changed
-  # s.source       = { :git => "https://github.com/mokagio/MGObjectiveUtils.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/mokagio/MGObjectiveUtils.git", :tag => "#{s.version}" }
   s.source_files = 'MGObjectiveUtils/Classes', 'MGObjectiveUtils/Categories/**/*.{h,m}', 'MGObjectiveUtils/**/*.{h.m}'
   s.platform = :ios
   s.requires_arc = true
