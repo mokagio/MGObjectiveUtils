@@ -10,7 +10,7 @@ namespace :test do
 
 end
 
-desc "Run the MGObjectiveUtilsTests for iOS & Mac OS X"
+desc "Run the MGObjectiveUtilsTests for iOS"
 task :test => ['test:ios'] do
   puts "\033[0;31m! Tests failed" unless $ios_success
   if $ios_success
