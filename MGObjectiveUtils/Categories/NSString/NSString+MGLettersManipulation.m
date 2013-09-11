@@ -25,7 +25,7 @@
     }
     return (
             removeDuplicates ?
-            [[NSOrderedSet orderedSetWithArray:result] allObjects] :
+            [[NSOrderedSet orderedSetWithArray:result] array] :
             result.copy
             );
 }
