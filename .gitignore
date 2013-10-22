@@ -18,3 +18,6 @@ profile
 # Libraries management should be done with CocoaPods
 # http://cocoapods.org/
 Pods/
+
+# We need xctool edge because the latest release doesn't work with Kiwi :/
+xctool
