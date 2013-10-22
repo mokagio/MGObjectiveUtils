@@ -5,7 +5,7 @@ namespace :test do
 
   desc "Run the MGObjectiveUtils Tests for iOS"
   task :ios => :prepare do
-    $ios_success = system("xctool -workspace MGObjectiveUtils.xcworkspace -scheme 'Tests' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator")
+    $ios_success = system("./xctool/xctool.sh -workspace MGObjectiveUtils.xcworkspace -scheme 'Tests' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator")
   end
 
 end
