@@ -7,22 +7,70 @@
       <Group
          location = "group:Classes"
          name = "Classes">
-         <FileRef
-            location = "group:MGInsetLabel.h">
-         </FileRef>
-         <FileRef
-            location = "group:MGInsetLabel.m">
-         </FileRef>
-         <FileRef
-            location = "group:MGResizableLabel.h">
-         </FileRef>
-         <FileRef
-            location = "group:MGResizableLabel.m">
-         </FileRef>
+         <Group
+            location = "group:MGInsetLabel"
+            name = "MGInsetLabel">
+            <FileRef
+               location = "group:MGInsetLabel.h">
+            </FileRef>
+            <FileRef
+               location = "group:MGInsetLabel.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:MGResizableLabel"
+            name = "MGResizableLabel">
+            <FileRef
+               location = "group:MGResizableLabel.h">
+            </FileRef>
+            <FileRef
+               location = "group:MGResizableLabel.m">
+            </FileRef>
+         </Group>
       </Group>
       <Group
          location = "group:Categories"
          name = "Categories">
+         <Group
+            location = "group:NSArray"
+            name = "NSArray">
+            <FileRef
+               location = "group:NSArray+MGUtils.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSArray+MGUtils.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:NSNumber"
+            name = "NSNumber">
+            <FileRef
+               location = "group:NSNumber+MGUtils.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSNumber+MGUtils.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:UIView"
+            name = "UIView">
+            <FileRef
+               location = "group:UIView+Utils.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+Utils.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:UIViewController"
+            name = "UIViewController">
+            <FileRef
+               location = "group:UIViewController+Threads.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIViewController+Threads.m">
+            </FileRef>
+         </Group>
          <Group
             location = "group:NSDate"
             name = "NSDate">
