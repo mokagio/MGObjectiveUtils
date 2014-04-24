@@ -15,6 +15,11 @@
     return [NSDate date];
 }
 
++ (NSDate *)yesterday
+{
+    return [NSDate dateWithTimeIntervalSinceNow:-86400];
+}
+
 - (NSDate *)dateForTheEndOfTheDay
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];

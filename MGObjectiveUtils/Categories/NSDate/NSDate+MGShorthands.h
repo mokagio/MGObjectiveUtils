@@ -11,6 +11,7 @@
 @interface NSDate (MGShorthands)
 
 + (NSDate *)now;
++ (NSDate *)yesterday;
 
 - (NSDate *)dateForTheStartOfTheDay;
 - (NSDate *)dateForTheEndOfTheDay;
