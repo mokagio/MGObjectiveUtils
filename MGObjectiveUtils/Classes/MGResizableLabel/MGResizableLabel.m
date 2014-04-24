@@ -8,8 +8,6 @@
 
 #import "MGResizableLabel.h"
 
-CGFloat kAnInsainlyHighHeight = 10000000;
-
 @implementation MGResizableLabel
 
 - (void)resizeHeightToFitText
@@ -18,11 +16,12 @@ CGFloat kAnInsainlyHighHeight = 10000000;
     CGRect newFrame = [self bounds];
     CGFloat textWidth = newFrame.size.width - (self.insets.left + self.insets.right);
     
-    CGSize newSize = [self.text sizeWithFont:self.font
-                           constrainedToSize:CGSizeMake(textWidth, kAnInsainlyHighHeight)
-                               lineBreakMode:self.lineBreakMode];
+    CGRect frame = [self.text boundingRectWithSize:(CGSize){ textWidth, CGFLOAT_MAX }
+                                           options:NSStringDrawingUsesLineFragmentOrigin
+                                        attributes:@{ NSFontAttributeName: self.font }
+                                           context:nil];
     
-    newFrame.size.height = newSize.height + self.insets.top + self.insets.bottom;
+    newFrame.size.height = frame.size.height + self.insets.top + self.insets.bottom;
     
     self.frame = CGRectMake(previousFrame.origin.x, previousFrame.origin.y, previousFrame.size.width, newFrame.size.height);
 }
